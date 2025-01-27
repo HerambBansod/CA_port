@@ -1,0 +1,75 @@
+.testimonial-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .testimonial-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fbbf24;
+    font-family: "Jost", serif;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .testimonial-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+  }
+  
+  .quote-icon {
+    font-size: 1.5rem;
+    color: #fbbf24;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    color: #555;
+    margin: 30px 0 20px;
+    line-height: 1.6;
+    font-family: "Jost", serif;
+  }
+  
+  .testimonial-author h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: "Jost", serif;
+    color: #333;
+  }
+  
+  .testimonial-role {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .testimonial-rating {
+    margin-top: 10px;
+  }
+  
+  .testimonial-rating svg {
+    color: #fbbf24;
+    font-size: 1.2rem;
+  }
+  

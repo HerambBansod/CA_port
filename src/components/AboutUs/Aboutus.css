@@ -1,0 +1,119 @@
+.about-Hero-section{
+    position: relative;
+    height: 50vh;
+    margin-bottom: 40px;
+    background-image: url('./Abouthead-bg.webp');
+    background-size: cover;
+    color: #fbbf24;
+    font-family: "Jost", serif;
+    font-size: 1.3rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.about-Hero-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.585);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    height: 40vh;
+}
+
+.about-head{
+    width: 60%;
+}
+
+.about-head h1{
+    text-align: center;
+}
+
+/* Story Section  */
+
+.Story-section{
+    height: 100vh;
+    display: flex;
+}
+
+.story-left{
+    width: 30%;
+    background-color: #fbbf24;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story{
+    width: 50%;
+}
+
+.story h1{
+    font-family: "Jost", serif;
+    font-size: 2rem;
+}
+
+.story p{
+    font-size: 1.3rem;
+    font-family: "Jost", serif;
+}
+
+.story-right{
+    width: 70%;
+    background-image: url('./CA_img.webp');
+    background-size: cover;
+}
+
+/* Why Us Section */
+.whyus-section{
+    height: 100vh;
+    background-color: #fbbf24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jost", serif;   
+}
+
+.whyus-left{
+    width: 30%;
+    background-image: url('./About-Whyus.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.whyus-right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.whyus-right h1{
+    text-align: start;
+}
+
+.whyus-right p{
+    text-align: start;
+}
+
+.about-contact{
+    height: 120vh;
+}
