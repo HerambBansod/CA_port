@@ -13,6 +13,7 @@
     align-items: center;
     border-bottom: 3px solid #fbbf24;
     width: 18%;
+    animation: fadeIn 1s ease-out;
 }
 
 .practices-head h2 {
@@ -30,6 +31,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 60px;
+    animation: fadeIn 1s ease-out;
 }
 
 .practice-item {
@@ -80,4 +82,18 @@
     color: #333;
     transform: translateY(-4px);
     box-shadow: 0px 12px 20px rgba(0, 123, 255, 0.3);
+}
+
+
+@media screen and (min-device-width: 375px) and (max-device-width: 428px){
+    .practices-head{
+        width: 70%;
+    }
+    .practices-head h2{
+        font-size: 2rem;
+    }
+    .practices-items {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 1000px;
+    }
 }

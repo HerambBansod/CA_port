@@ -1,5 +1,5 @@
 import React from 'react'
-import './practice.css'
+import '../Sections/Practice.css';
 import { Link } from 'react-router-dom';
 
 import { FaBriefcase, FaRegFileAlt, FaGlobe, FaBuilding, FaCheck } from 'react-icons/fa';
