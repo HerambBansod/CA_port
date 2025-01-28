@@ -19,7 +19,7 @@
     font-size: 3rem;
     font-weight: bold;
     color: #fbbf24;
-    font-family: "Jost", serif;
+   font-family: "Jost", serif;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@
 .practice-item h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: "Jost", serif;
+   font-family: "Jost", serif;
     color: #333;
     margin-bottom: 10px;
 }
@@ -58,7 +58,7 @@
 .practice-item p {
     font-size: 1rem;
     color: #666;
-    font-family: "Jost", serif;
+   font-family: "Jost", serif;
 }
 
 .knowmore-btn a {
@@ -66,7 +66,7 @@
     padding: 12px 30px;
     width: 18%;
     font-size: 18px;
-    font-family: "Jost", serif;
+   font-family: "Jost", serif;
     color: #fbbf24;
     background-color: #fbbe2400;
     border: 3px solid#fbbf24;
@@ -124,7 +124,7 @@
     font-weight: bold;
     color: #1f2937;
     margin-left: 1rem;
-    font-family: 'Smooch Sans', sans-serif;
+   font-family: "Jost", serif;
   }
   
   .modal-close-btn {
@@ -151,7 +151,7 @@
     font-weight: bold;
     color: #1f2937;
     margin-bottom: 1rem;
-    font-family: 'Inter', sans-serif;
+   font-family: "Jost", serif;
   }
   
   .modal-section-list {
@@ -182,7 +182,7 @@
   
   .modal-section-text {
     color: #4b5563;
-    font-family: 'Jost', sans-serif;
+   font-family: "Jost", serif;
   }
   
   .modal-close-details-btn {
@@ -194,7 +194,7 @@
     border-radius: 0.5rem;
     font-weight: 600;
     transition: background-color 0.2s;
-    font-family: 'Inter', sans-serif;
+   font-family: "Jost", serif;
     font-size: 1rem;
   }
   
