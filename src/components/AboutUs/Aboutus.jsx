@@ -12,10 +12,11 @@ import { FaCheck } from 'react-icons/fa';
 
 export default function Aboutus() {
     return (
+        <> <Navbar />
         <div className="aboutus">
             <div className="about-Hero-section">
                 <div className="about-nav">
-                    <Navbar />
+                   
                 </div>
                 <div className="about-content">
                     <div className="about-head">
@@ -90,5 +91,6 @@ export default function Aboutus() {
                 <Footer />
             </div>
         </div>
+        </>
     )
 }
