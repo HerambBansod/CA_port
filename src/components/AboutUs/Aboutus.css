@@ -40,6 +40,7 @@
 }
 
 .about-head h1{
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -116,4 +117,66 @@
 
 .about-contact{
     height: 120vh;
+}
+
+@media screen and (max-width: 768px){
+
+    .about-head{
+        width: 90%;
+    }
+
+    .about-head h1{
+        font-size: 2rem;
+    }
+
+    .about-head p{
+        font-size: 1rem;
+    }
+
+    .Story-section{
+        display: flex;
+        flex-direction: column;
+        height: 55vh;
+    }
+
+    .story-left{
+        width: 100%;
+    }
+
+    .story{
+        width: 90%;
+    }
+
+    .story h1{
+        text-align: center;
+    }
+
+    .story-right{
+        display: hidden;
+    }
+
+    .about-practices{
+        height: 260vh;
+    }
+
+    .whyus-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .whyus-left{
+        height: 30vh;
+        width: 100%;
+    }
+
+    .whyus-right{
+        background-color: #ffffff00;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .whyus-right p{
+        text-align: center;
+    }
 }

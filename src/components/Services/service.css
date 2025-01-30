@@ -50,3 +50,22 @@
 .service-contactus{
     height: 120vh;
 }
+
+@media screen and (max-width: 768px) {
+    .service-head{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .service-head h1{
+        font-size: 2rem;
+    }
+
+    .service-head p{
+        font-size: 1rem;
+    }
+
+    .service-practice{
+        height: 270vh;
+    }
+}

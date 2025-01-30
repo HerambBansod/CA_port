@@ -1,4 +1,4 @@
-.contact-hero-section{
+.contact-hero-section {
     position: relative;
     height: 50vh;
     background-image: url('./Contactform.webp');
@@ -12,7 +12,7 @@
     overflow: hidden;
 }
 
-.contact-hero-section::before{
+.contact-hero-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.contact-section{
+.contact-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@
     background-image: url('./Background_1.0.png');
 }
 
-.contact-form-container{
+.contact-form-container {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
@@ -43,14 +43,14 @@
     padding: 50px;
 }
 
-.contact-left{
-    
+.contact-left {
+
     height: 100%;
     width: 50%;
 }
 
-.contact-right{
-    background-color:#fff;
+.contact-right {
+    background-color: #fff;
     height: 80%;
     width: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -61,7 +61,7 @@
     border-radius: 7px;
 }
 
-.contact-right h1{
+.contact-right h1 {
     font-family: "Jost", serif;
 }
 
@@ -109,4 +109,43 @@ textarea:focus {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-hero-section {
+        height: 40vh;
+    }
+
+    .contact-section {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .contact-form-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        height: auto;
+        width: 90%;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .contact-right form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        align-self: center;
+    }
 }

@@ -37,13 +37,13 @@ export default function Aboutus() {
                     </div>
                 </div>
                 <div className="story-right">
-                    
+
                 </div>
             </div>
 
             {/* Practices */}
             <div className="about-practices">
-                <Practice/>
+                <Practice />
             </div>
 
             {/* Why us  */}
@@ -73,21 +73,21 @@ export default function Aboutus() {
                         <FaCheck style={{ color: 'green', fontSize: '1.2rem', marginRight: '8px' }} />
                         Comprehensive tax solutions for businesses and individuals.
                     </p>
-                
+
                 </div>
             </div>
 
             {/* Contact us section */}
             <div className="about-contact">
-                <ContactForm/>
+                <ContactForm />
             </div>
 
             <div className="testimonial-section">
-                <Testimonial/>
+                <Testimonial />
             </div>
 
             <div className="footer-section">
-                <Footer/>
+                <Footer />
             </div>
         </div>
     )

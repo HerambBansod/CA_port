@@ -3,7 +3,7 @@ import './service.css'
 import Navbar from '../Navbar/Navbar';
 import Practice from '../Sections/Practice.jsx';
 import Testimonial from '../Testimonial_section/Testimonial';
-// import ContactForm from '../ContactForm_Fpages/ContactForm';
+import ContactForm from '../ContactForm_Fpages/ContactForm';
 import Footer from '../Footer/Footer';
 
 export default function service() {
@@ -29,7 +29,7 @@ export default function service() {
                 <Practice />
             </div>
             <div className="service-contactus">
-                {/* <ContactForm/> */}
+                <ContactForm/>
             </div>
             <div className="service-testimonials">
                 <Testimonial/>
