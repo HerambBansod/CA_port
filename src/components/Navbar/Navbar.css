@@ -1,12 +1,12 @@
 /* Navbar container */
 .nav-head {
-    height: 5vh;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    color: white;
+    color: black;
     font-family: "Inter Tight", serif;
+    background-color: #f3f3f3;
 }
 
 .nav-list-left h1 {
@@ -16,7 +16,6 @@
     color: #fbbf24;
 }
 
-
 .nav-list-right ul {
     display: flex;
     list-style: none;
@@ -24,34 +23,81 @@
     padding: 0;
 }
 
-
 .nav-list-right li {
     margin-right: 20px;
 }
 
-
 .nav-list-right a {
     text-decoration: none;
-    color: White;
+    color: black;
     font-size: 1.3rem;
     border-radius: 5px;
 }
 
-.nav-list-right .btn {
+.Btn {
+    padding: 0.5rem 1rem;
     background-color: #fbbf24;
-    color: #1e293b;
-    font-weight: bold;
-    border-radius: 30px;
+    color: white;
+    border-radius: 4px;
 }
 
+/* Toggle button for mobile view */
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
-.nav-list-right li:last-child {
-    margin-right: 0;
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-list-right {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #f3f3f3;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .nav-list-right.active {
+        display: flex;
+        margin-top: 3rem;
+        align-items: flex-end;
+        padding-right: 2rem;
+        width: 45%;
+        border-radius: 0 0 0 2rem;
+        box-shadow: rgba(0, 0, 0, 0.292) 0px   8px;
+    }
+ 
+
+    .nav-list-right ul {
+        flex-direction: column;
+    }
+
+    .nav-list-right li {
+        margin: 1rem 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-list-left h1 {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
-   
-    .nav-head{
+    .nav-head {
         overflow: hidden;
+    }
+
+    .nav-list-left h1 {
+        font-size: 1.5rem;
     }
 }

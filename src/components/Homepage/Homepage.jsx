@@ -1,4 +1,4 @@
-import React from 'react';
+ 
 import './Homepage.css';
 
 import Navbar from '../Navbar/Navbar';
@@ -16,14 +16,17 @@ import { FaArrowRight } from 'react-icons/fa';
 
 export default function Homepage() {
     return (
+        <>   
+        <Navbar />
         <div className="Homepage">
+          
             <div className="hero-section">
                 <video className="background-video" autoPlay loop muted>
                     <source src="/Landing_video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="header">
-                    <Navbar />
+                   
                 </div>
                 <div className="landing-page">
                     <div className="landing-content">
@@ -55,5 +58,6 @@ export default function Homepage() {
                 <Footer/>
             </div>
         </div>
+        </>
     )
 }

@@ -125,20 +125,10 @@
     height: 120vh;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 768px){
 
     .about-head{
         width: 90%;
-=======
-
-@media screen and (min-device-width: 375px) and (max-device-width: 428px) {
-
-    .about-head{
-        padding: 5px;
-        height: 50vh;
-        width: 95%;
->>>>>>> 34f7c29 (responsive thing done)
     }
 
     .about-head h1{
@@ -150,7 +140,6 @@
     }
 
     .Story-section{
-<<<<<<< HEAD
         display: flex;
         flex-direction: column;
         height: 55vh;
@@ -166,31 +155,6 @@
 
     .story h1{
         text-align: center;
-=======
-        height: 65vh;
-        flex-direction: column;
-        align-items: center;
-    }
-    .story{
-        padding:10px;
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .story h1{
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .story p{
-        text-align: center;
-        font-size: 1.4rem;
-    }
-
-    .story-left{
-        width: 95%;
->>>>>>> 34f7c29 (responsive thing done)
     }
 
     .story-right{
@@ -198,7 +162,6 @@
     }
 
     .about-practices{
-<<<<<<< HEAD
         height: 260vh;
     }
 
@@ -221,34 +184,5 @@
 
     .whyus-right p{
         text-align: center;
-=======
-        height: 270vh;
-    }
-
-    .whyus-section{
-        flex-direction: column;
-        justify-content: start;
-        gap: 30px;
-        height: 90vh;
-    }
-
-    .whyus-left{
-        width: 100%;
-        height: 20vh;
-    }
-
-    .whyus-right{
-        width: 95%;
-        background-color: #fbbf24;
-    }
-
-    .whyus-right h1{
-        font-size: 2rem;
-        color: #fff;
-    }
-
-    .about-contact{
-        height: 90vh;
->>>>>>> 34f7c29 (responsive thing done)
     }
 }
