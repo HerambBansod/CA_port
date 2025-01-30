@@ -33,6 +33,7 @@
     gap: 0;
     width: 100%;
     height: 40vh;
+    animation: fadeIn 1s ease-out;
 }
 
 .service-head {
@@ -41,12 +42,18 @@
 
 .service-head h1 {
     text-align: center;
+    animation: fadeIn 1s ease-out;
 }
 
 .service-practice {
+    height: 270vh;
+}
+
+.service-contactus {
     height: 120vh;
 }
 
+<<<<<<< HEAD
 .service-contactus{
     height: 120vh;
 }
@@ -68,4 +75,25 @@
     .service-practice{
         height: 270vh;
     }
+=======
+
+@media screen and (min-device-width: 375px) and (max-device-width: 428px) {
+    .service-head {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .service-head h1 {
+        font-size: 2rem;
+    }
+
+    .service-head p {
+        font-size: 1rem;
+    }
+
+    .service-contactus {
+        height: 100vh;
+    }
+
+>>>>>>> 34f7c29 (responsive thing done)
 }

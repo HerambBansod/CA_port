@@ -7,7 +7,6 @@
     align-items: center;
     color: white;
     font-family: "Inter Tight", serif;
-    
 }
 
 .nav-list-left h1 {
@@ -48,4 +47,11 @@
 
 .nav-list-right li:last-child {
     margin-right: 0;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+   
+    .nav-head{
+        overflow: hidden;
+    }
 }

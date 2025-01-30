@@ -1,3 +1,17 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 .hero-section {
     position: relative;
     height: 100vh;
@@ -31,12 +45,14 @@
     height: 100%;
     width: 100%;
     color: white;
+    animation: fadeIn 1s ease-out;
 }
 
 .landing-content {
     width: 70%;
     text-align: center;
     z-index: 2;
+    animation: fadeIn 1s ease-out;
 }
 
 .landing-content h1 {
@@ -53,6 +69,7 @@
     justify-content: center;
     text-align: center;
     margin-top: 20px;
+    animation: fadeIn 1s ease-out;
 }
 
 .CTA-btn a {
@@ -160,13 +177,72 @@
 }
 
 
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
+=======
+
+
+
+
+@media screen and (min-device-width: 375px) and (max-device-width: 428px) {
+    .header{
+        overflow: hidden;
+    }
+    .landing-content {
+        width: 90%;
+    }
+
+    .landing-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .CTA-btn a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .practices-section{
+        height: 270vh;
+    }
+
+    .testimonial-section{
+        height: 160vh;
+    }
+
+    .Contact-section{
+        height:100vh;
+    }
+
+    .footer-section{
+        padding:20px;
+    }
+
+    .footer-section h1{
+        font-size: 2rem;
+    }
+
+    .footer-button{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+
+}
+
+/* Android Phones */
+@media screen and (min-width: 320px) and (max-width: 428px) {
+    .landing-content {
+        width: 85%;
+    }
+
+>>>>>>> 34f7c29 (responsive thing done)
     .landing-content h1 {
         font-size: 2.5rem;
     }
 
     .CTA-btn a {
         font-size: 15px;
+<<<<<<< HEAD
     }
 
     .practices-section {
@@ -185,4 +261,23 @@
     .footer-button {
         font-size: 1rem;
     }
+=======
+        padding: 8px 20px;
+    }
+
+    .footer-section {
+        font-size: 1rem;
+    }
+}
+
+/* Tablets (both iOS and Android) */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .landing-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .landing-content {
+        width: 75%;
+    }
+>>>>>>> 34f7c29 (responsive thing done)
 }

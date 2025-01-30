@@ -82,7 +82,31 @@
     box-shadow: 0px 12px 20px rgba(0, 123, 255, 0.3);
 }
 
+.knowmore-btn a {
+    margin-top: 10px;
+    padding: 12px 30px;
+    width: 18%;
+    font-size: 18px;
+    font-family: "Jost", serif;
+    color: #fbbf24;
+    background-color: #fbbe2400;
+    border: 3px solid#fbbf24;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
+<<<<<<< HEAD
+=======
+.knowmore-btn a:hover {
+    background-color: #fbbf24;
+    color: #333;
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 20px rgba(0, 123, 255, 0.3);
+}
+
+
+>>>>>>> 34f7c29 (responsive thing done)
 .modal-backdrop {
     position: fixed;
     inset: 0;
@@ -160,6 +184,7 @@
     gap: 1rem;
 }
 
+<<<<<<< HEAD
 @media (min-width: 768px) {
     .modal-section-list {
         grid-template-columns: 1fr 1fr;
@@ -420,4 +445,62 @@
     .practices-head h2{
         font-size: 2rem;
     }
+=======
+
+@media screen and (min-device-width: 375px) and (max-device-width: 428px) {
+    .practices-head {
+        width: 70%;
+    }
+
+    .practices-head h2 {
+        font-size: 2rem;
+    }
+
+    .practices-items {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 1000px;
+    }
+
+    .modal-section-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .modal-section-item {
+        display: flex;
+        align-items: start;
+    }
+
+    .modal-section-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        color: #10b981;
+        margin-top: 0.25rem;
+        margin-right: 0.75rem;
+        flex-shrink: 0;
+    }
+
+    .modal-section-text {
+        color: #4b5563;
+        font-family: "Jost", serif;
+    }
+
+    .modal-close-details-btn {
+        margin-top: 1.5rem;
+        width: 100%;
+        background: #fbbe24;
+        color: #333;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: background-color 0.2s;
+        font-family: "Jost", serif;
+        font-size: 1rem;
+    }
+
+    .modal-close-details-btn:hover {
+        background: #1d4ed8;
+
+    }
+>>>>>>> 34f7c29 (responsive thing done)
 }
