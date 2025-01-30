@@ -33,14 +33,17 @@
     gap: 0;
     width: 100%;
     height: 40vh;
+    animation: fadeIn 1s ease-out;
 }
 
 .about-head{
+    height: 100vh;
     width: 60%;
 }
 
 .about-head h1{
     text-align: center;
+    animation: fadeIn 1s ease-out;
 }
 
 /* Story Section  */
@@ -66,17 +69,20 @@
 .story h1{
     font-family: "Jost", serif;
     font-size: 2rem;
+    animation: fadeIn 1s ease-out;
 }
 
 .story p{
     font-size: 1.3rem;
     font-family: "Jost", serif;
+    animation: fadeIn 1s ease-out;
 }
 
 .story-right{
     width: 70%;
     background-image: url('./CA_img.webp');
     background-size: cover;
+    animation: fadeIn 1s ease-out;
 }
 
 /* Why Us Section */
@@ -116,4 +122,82 @@
 
 .about-contact{
     height: 120vh;
+}
+
+
+@media screen and (min-device-width: 375px) and (max-device-width: 428px) {
+
+    .about-head{
+        padding: 5px;
+        height: 50vh;
+        width: 95%;
+    }
+
+    .about-head h1{
+        font-size: 2rem;
+    }
+
+    .about-head p{
+        font-size: 1rem;
+    }
+
+    .Story-section{
+        height: 65vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .story{
+        padding:10px;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .story h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .story p{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .story-left{
+        width: 95%;
+    }
+
+    .story-right{
+        display: hidden;
+    }
+
+    .about-practices{
+        height: 270vh;
+    }
+
+    .whyus-section{
+        flex-direction: column;
+        justify-content: start;
+        gap: 30px;
+        height: 90vh;
+    }
+
+    .whyus-left{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .whyus-right{
+        width: 95%;
+        background-color: #fbbf24;
+    }
+
+    .whyus-right h1{
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .about-contact{
+        height: 90vh;
+    }
 }
