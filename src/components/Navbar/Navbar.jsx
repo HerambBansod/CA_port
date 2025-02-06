@@ -1,49 +1,46 @@
-import   { useState, useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import   { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FaArrowRight } from "react-icons/fa6";
+import { FaBars } from "react-icons/fa";
 import './Navbar.css';
 
 export default function NavBar() {
-    const [dropdownOpen, setDropdownOpen] = useState(false);
-    const location = useLocation();
-    const navRef = useRef(null);
-
-    useEffect(() => {
-        setDropdownOpen(false);
-    }, [location]);
-
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (navRef.current && !navRef.current.contains(event.target)) {
-                setDropdownOpen(false);
-            }
-        };
-
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, [navRef]);
-
-    const toggleNav = () => {
-        setDropdownOpen(!dropdownOpen);
-    };
-
+    const [dropDown, setDropDown] = useState(false);
+  
+    function handleDropDown() {
+      setDropDown(!dropDown);
+    }
+  
     return (
-        <nav className="nav-head" ref={navRef}>
-            <div className="nav-list-left">
-                <h1>FirmName</h1>
-            </div>
-            <button className="nav-toggle" aria-label="Toggle navigation" onClick={toggleNav}>
-                &#9776;
+      <div className="navbar-section">
+        <div className="container">
+          <div className="navbar-logo">
+            <img src="../../../images/ca logo.jpeg" alt="ca-logo" />
+          </div>
+          <div className="navbar-element">
+            <FaBars className="navbar-menu" onClick={handleDropDown} />
+            <ul className={`menu ${dropDown ? "show" : ""}`}>
+              <li>
+                <Link to="/" className="link-li">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/Services" className="link-li">
+                  Service
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="link-li">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+            <button className="get-in-touch-btn">
+              Get In Touch <FaArrowRight />
             </button>
-            <div className={`nav-list-right ${dropdownOpen ? 'active' : ''}`}>
-                <ul className="nav-menu">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/About-us">About us</Link></li>
-                    <li><Link to="/Services">Services</Link></li>
-                    <li><Link to="/contact" className='Btn'>Contact Us</Link></li>
-                </ul>
-            </div>
-        </nav>
+          </div>
+        </div>
+      </div>
     );
-}
+  }

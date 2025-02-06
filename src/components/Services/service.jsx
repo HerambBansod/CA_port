@@ -8,10 +8,13 @@ import Footer from '../Footer/Footer';
 
 export default function service() {
     return (
+        <>
+        <Navbar />
+        
         <div className="services">
             <div className="service-hero-section">
                 <div className="service-nav">
-                    <Navbar />
+                    
                 </div>
                 <div className="service-content">
                     <div className="service-head">
@@ -38,5 +41,6 @@ export default function service() {
                 <Footer/>
             </div>
         </div>
+        </>
     )
 }

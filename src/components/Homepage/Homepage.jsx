@@ -41,7 +41,7 @@ export default function Homepage() {
                 </div>
             </div>
 
-            {/* service/practice section */}
+            service/practice section
 
             <div className="practices-section">
                 <Practice/>

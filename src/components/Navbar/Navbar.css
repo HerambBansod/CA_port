@@ -1,103 +1,147 @@
-/* Navbar container */
-.nav-head {
-    padding: 20px;
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    color: black;
-    font-family: "Inter Tight", serif;
-    background-color: #f3f3f3;
-}
+  }
 
-.nav-list-left h1 {
+ 
+  .navbar-logo img{
+    width:30% ;
+    object-fit: cover;
+
+  }
+
+  .navbar-element{
+    display: flex
+    ;
+        justify-content: space-between;
+        width: 60%;
+        align-items: center;
+        
+  }
+
+  .navbar-element ul{
+    display: flex
+    ;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+        width: 50%;
+  }
+  .navbar-menu{
+    display: none;
     font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #fbbf24;
-}
-
-.nav-list-right ul {
+  }
+ 
+  
+  .menu {
+    display: none;
+    
+     
+  }
+  
+  .menu.show {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+    justify-content: center;
+    flex-direction: column;
+    background: #ffff;
+    box-shadow: #ffffff 1px 2px 3px 3px;
+    position: absolute;
+    transform: translateY(88%);
+    left: 1%;
+    row-gap: 1rem;
+    z-index: 4;
+    align-items: flex-start;
+ 
+  }
+  
 
-.nav-list-right li {
-    margin-right: 20px;
-}
+  .navbar-element ul li{
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .get-in-touch-btn{
+     
+        font-size: 24px;
+        border-radius: 2rem;
+        padding: 1rem;
+      width: 30%;
+        display: flex
+    ;
+        justify-content: space-around;
+        align-items: center;
 
-.nav-list-right a {
+  }
+
+  .navbar-section{
+    justify-content: center;
+    display: flex
+;
+    align-items: center;
+  }
+
+  .link-li{
     text-decoration: none;
     color: black;
-    font-size: 1.3rem;
-    border-radius: 5px;
-}
-
-.Btn {
-    padding: 0.5rem 1rem;
-    background-color: #fbbf24;
-    color: white;
-    border-radius: 4px;
-}
-
-/* Toggle button for mobile view */
-.nav-toggle {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .nav-list-right {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #f3f3f3;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+  
+  @media (max-width: 768px){
+    .container{
+        
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+    .navbar-logo img {
+        width: max-content;
+    }
+    .navbar-element{
         width: 100%;
+        margin-bottom: 1rem;
+    }
+    .navbar-element ul{
         display: none;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1000;
+        font-size: 30px;
     }
-
-    .nav-list-right.active {
+    .navbar-menu{
         display: flex;
-        margin-top: 3rem;
-        align-items: flex-end;
-        padding-right: 2rem;
-        width: 45%;
-        border-radius: 0 0 0 2rem;
-        box-shadow: rgba(0, 0, 0, 0.292) 0px   8px;
     }
+    .get-in-touch-btn {
+        width: max-content;
+    }
+  }
  
-
-    .nav-list-right ul {
-        flex-direction: column;
-    }
-
-    .nav-list-right li {
-        margin: 1rem 0;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    .nav-list-left h1 {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
-    .nav-head {
-        overflow: hidden;
-    }
-
-    .nav-list-left h1 {
-        font-size: 1.5rem;
-    }
-}
