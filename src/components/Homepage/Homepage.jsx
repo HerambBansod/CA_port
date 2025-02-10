@@ -5,19 +5,24 @@ import Navbar from '../Navbar/Navbar';
 import ContactForm from '../ContactForm_Fpages/ContactForm';
 import Testimonial from '../Testimonial_section/Testimonial';
 import Footer from '../Footer/Footer';
-import Practice from '../Sections/Practice.jsx';
+ 
 
 
 import { Link } from 'react-router-dom';
 
 // icons
 import { FaArrowRight } from 'react-icons/fa';
+import Aboutus from '../AboutUs/Aboutus.jsx';
+import Practice from '../Sections/Practice.jsx';
 
 
 export default function Homepage() {
     return (
         <>   
+        <Footer/>
         <Navbar />
+       
+      
         <div className="Homepage">
           
             <div className="hero-section">
@@ -40,23 +45,25 @@ export default function Homepage() {
                     </div>
                 </div>
             </div>
+ 
 
-            {/* service/practice section */}
-
-            <div className="practices-section">
-                <Practice/>
+            <div className="about-section">
+            <Aboutus/>
             </div>
-
-            {/* Contact us */}
-            <div className="Contact-section">
-                <ContactForm/>
+            <div className="about-section">
+            <Practice/>
             </div>
             <div className="testimonial-section">
                 <Testimonial/>
             </div>
-            <div className="footer-section">
-                <Footer/>
+            {/* Contact us */}
+            <div className="Contact-section">
+                <ContactForm/>
             </div>
+           
+            {/* <div className="footer-section"> */}
+                {/* <Footer/> */}
+            {/* </div> */}
         </div>
         </>
     )

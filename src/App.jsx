@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Homepage from './components/Homepage/Homepage'  
@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} /> 
-          <Route path="/About-us" element={<Aboutus />} /> 
+          <Route path="/Aboutus" element={<Aboutus />} /> 
           <Route path="/Services" element={<Service />} /> 
           <Route path="/contact" element={<Contact />} />
         </Routes>

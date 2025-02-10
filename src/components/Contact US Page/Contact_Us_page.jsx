@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import './Contact_Us_page.css'
 import Navbar from '../Navbar/Navbar';
 
@@ -6,10 +6,12 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Contact_Us_page() {
     return (
+        <>
+        <Navbar/>
         <div className="contactus">
             <div className="contact-hero-section">
                 <div className="contact-nav">
-                    <Navbar />
+                
                 </div>
             </div>
             <div className="contact-section">
@@ -60,5 +62,6 @@ export default function Contact_Us_page() {
                 </div>
             </div>
         </div>
+        </>
     )
 }

@@ -26,16 +26,49 @@
     -webkit-backdrop-filter: blur(20px); 
     z-index: -1; 
 }
-
-
-<<<<<<< HEAD
-
-=======
-@media screen and (min-device-width: 375px) and (max-device-width: 428px) {
-    .footer-container {
-        padding: 20px;
-        
-    }
-
+.testimonial-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
->>>>>>> 34f7c29 (responsive thing done)
+
+.testimonial-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Jost', serif;
+    color: #333;
+}
+
+.testimonial-item {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: #fbbf24;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Jost', serif;
+    margin-bottom: 15px;
+}
+
+.testimonial-author h4 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.testimonial-role {
+    font-size: 1rem;
+    color: #999;
+}
+
+.testimonial-rating {
+    color: #fbbf24;
+}
