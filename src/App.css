@@ -1,6 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Courgette&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 #root {
   max-width: 100%;
   margin: 0 ;
   padding: 0;
+ 
 }
 
+ 
+
+/* 'lightning-yellow': {
+  '50': '#fff9eb',
+  '100': '#feefc7',
+  '200': '#fddd8a',
+  '300': '#fccb4d',
+  '400': '#fbbf24',
+  '500': '#f5b40b',
+  '600': '#d99e06',
+  '700': '#b48409',
+  '800': '#926d0e',
+  '900': '#785b0f',
+  '950': '#453303',
+}, */
+
+
+/* blue color theme  */
+
+/* 'azure-radiance': {
+  '50': '#edfaff',
+  '100': '#d6f2ff',
+  '200': '#b5eaff',
+  '300': '#83dfff',
+  '400': '#48cbff',
+  '500': '#1eadff',
+  '600': '#068fff',
+  '700': '#007bff',
+  '800': '#085ec5',
+  '900': '#0d519b',
+  '950': '#0e315d',
+}, */

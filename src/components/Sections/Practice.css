@@ -1,42 +1,63 @@
+.golden-div {
+    background: radial-gradient(#fda842, #fdc27c);
+    ;
+    width: 20%;
+    height: 55rem;
+    margin-top:5.5rem;
+    position: absolute;
+    translate: 40.2vw;
+    z-index: -1;
+    border-radius: 2rem 0rem 0rem 2rem;
+
+}
+
+@media (max-width: 1024px) {
+    .golden-div {
+        width: 40%;
+        height: 60rem;
+        translate: 31vw;
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .golden-div {
+        width: 40%;
+        height: 135rem;
+        translate: 31vw 1vh;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .golden-div {
+        width: 40%;
+        height: 140rem;
+        translate: 31vw;
+        margin-top: 10rem;
+    }
+}
+
 .practices {
-    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-}
-
-.practices-head {
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 3px solid #fbbf24;
-    width: 18%;
-}
-
-.practices-head h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fbbf24;
-    font-family: "Jost", serif;
-    text-align: center;
+    margin-top: 6rem;
 }
 
 .practices-items {
-    height: 90vh;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
     padding: 60px;
 }
 
 .practice-item {
-    background-color: #fff;
+    background-color: #fffaee;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.256);
     text-align: start;
     width: 90%;
 }
@@ -61,52 +82,6 @@
     font-family: "Jost", serif;
 }
 
-.knowmore-btn a {
-    margin-top: 10px;
-    padding: 12px 30px;
-    width: 18%;
-    font-size: 18px;
-    font-family: "Jost", serif;
-    color: #fbbf24;
-    background-color: #fbbe2400;
-    border: 3px solid#fbbf24;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.knowmore-btn a:hover {
-    background-color: #fbbf24;
-    color: #333;
-    transform: translateY(-4px);
-    box-shadow: 0px 12px 20px rgba(0, 123, 255, 0.3);
-}
-
-.knowmore-btn a {
-    margin-top: 10px;
-    padding: 12px 30px;
-    width: 18%;
-    font-size: 18px;
-    font-family: "Jost", serif;
-    color: #fbbf24;
-    background-color: #fbbe2400;
-    border: 3px solid#fbbf24;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-<<<<<<< HEAD
-=======
-.knowmore-btn a:hover {
-    background-color: #fbbf24;
-    color: #333;
-    transform: translateY(-4px);
-    box-shadow: 0px 12px 20px rgba(0, 123, 255, 0.3);
-}
-
-
->>>>>>> 34f7c29 (responsive thing done)
 .modal-backdrop {
     position: fixed;
     inset: 0;
@@ -123,7 +98,6 @@
     border-radius: 1rem;
     max-width: 48rem;
     width: 100%;
-    max-height: 90vh;
     overflow-y: auto;
 }
 
@@ -163,7 +137,6 @@
 
 .modal-close-icon {
     width: 1.5rem;
-    height: 1.5rem;
 }
 
 .modal-section {
@@ -184,7 +157,6 @@
     gap: 1rem;
 }
 
-<<<<<<< HEAD
 @media (min-width: 768px) {
     .modal-section-list {
         grid-template-columns: 1fr 1fr;
@@ -198,7 +170,6 @@
 
 .modal-section-icon {
     width: 1.25rem;
-    height: 1.25rem;
     color: #10b981;
     margin-top: 0.25rem;
     margin-right: 0.75rem;
@@ -227,67 +198,20 @@
     background: #1d4ed8;
 }
 
-.practices {
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .practices-head {
     height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid #fbbf24;
-    width: 18%;
+     
 }
 
 .practices-head h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #fbbf24;
     font-family: "Jost", serif;
     text-align: center;
-}
-
-.practices-items {
-    height: 90vh;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 60px;
-}
-
-.practice-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: start;
-    width: 90%;
-}
-
-.practice-icon {
-    font-size: 3rem;
-    color: #fbbf24;
-    margin-bottom: 15px;
-}
-
-.practice-item h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: "Jost", serif;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.practice-item p {
-    font-size: 1rem;
-    color: #666;
-    font-family: "Jost", serif;
 }
 
 .knowmore-btn a {
@@ -298,7 +222,7 @@
     font-family: "Jost", serif;
     color: #fbbf24;
     background-color: #fbbe2400;
-    border: 3px solid#fbbf24;
+    border: 3px solid #fbbf24;
     border-radius: 5px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -311,91 +235,10 @@
     box-shadow: 0px 12px 20px rgba(0, 123, 255, 0.3);
 }
 
-
-.modal-backdrop {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 50;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
-.modal-container {
-    background: white;
-    border-radius: 1rem;
-    max-width: 48rem;
-    width: 100%;
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-.modal-content {
-    padding: 1.5rem 2rem;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-}
-
-.modal-title {
-    display: flex;
-    align-items: center;
-}
-
-.modal-title-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #1f2937;
-    margin-left: 1rem;
-    font-family: "Jost", serif;
-}
-
-.modal-close-btn {
-    color: #fbbe24;
-    background: none;
-    border: none;
-}
-
-.modal-close-btn:hover {
-    color: #4b5563;
-}
-
-.modal-close-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.modal-section {
-    margin-bottom: 2rem;
-}
-
-.modal-section-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #1f2937;
-    margin-bottom: 1rem;
-    font-family: "Jost", serif;
-}
-
-.modal-section-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-
-
 @media screen and (max-width: 768px) {
     .modal-section-list {
         grid-template-columns: 1fr 1fr;
     }
-
 
     .modal-section-item {
         display: flex;
@@ -404,7 +247,6 @@
 
     .modal-section-icon {
         width: 1.25rem;
-        height: 1.25rem;
         color: #10b981;
         margin-top: 0.25rem;
         margin-right: 0.75rem;
@@ -433,7 +275,7 @@
         background: #1d4ed8;
     }
 
-    .practices-items{
+    .practices-items {
         display: flex;
         flex-direction: column;
     }
@@ -442,65 +284,7 @@
         width: 80%;
     }
 
-    .practices-head h2{
-        font-size: 2rem;
-    }
-=======
-
-@media screen and (min-device-width: 375px) and (max-device-width: 428px) {
-    .practices-head {
-        width: 70%;
-    }
-
     .practices-head h2 {
         font-size: 2rem;
     }
-
-    .practices-items {
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 1000px;
-    }
-
-    .modal-section-list {
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    .modal-section-item {
-        display: flex;
-        align-items: start;
-    }
-
-    .modal-section-icon {
-        width: 1.25rem;
-        height: 1.25rem;
-        color: #10b981;
-        margin-top: 0.25rem;
-        margin-right: 0.75rem;
-        flex-shrink: 0;
-    }
-
-    .modal-section-text {
-        color: #4b5563;
-        font-family: "Jost", serif;
-    }
-
-    .modal-close-details-btn {
-        margin-top: 1.5rem;
-        width: 100%;
-        background: #fbbe24;
-        color: #333;
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.5rem;
-        font-weight: 600;
-        transition: background-color 0.2s;
-        font-family: "Jost", serif;
-        font-size: 1rem;
-    }
-
-    .modal-close-details-btn:hover {
-        background: #1d4ed8;
-
-    }
->>>>>>> 34f7c29 (responsive thing done)
 }
