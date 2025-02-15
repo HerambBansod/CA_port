@@ -1,4 +1,4 @@
-.footer-container {
+/* .footer-container {
     position: relative;
     height: 65vh;
     font-family: "Jost", serif;
@@ -7,14 +7,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.footer-container h1{
-    text-align: center;
-    color: #fbbf24;
-}
-
-.footer-container::before {
+/* .footer-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -22,53 +17,85 @@
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px); 
-    -webkit-backdrop-filter: blur(20px); 
-    z-index: -1; 
-}
-.testimonial-container {
-    width: 80%;
-    margin: auto;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: -1;
+} */
+
+.footer-container {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.testimonial-heading {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    font-family: 'Jost', serif;
-    color: #333;
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.testimonial-item {
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.footer-section {
+    margin: 20px;
+    flex: 1;
+    min-width: 250px;
 }
 
-.quote-icon {
-    font-size: 2rem;
-    color: #fbbf24;
+.footer-section h1,
+.footer-section h2 {
     margin-bottom: 15px;
 }
 
-.testimonial-text {
-    font-size: 1rem;
-    color: #666;
-    font-family: 'Jost', serif;
-    margin-bottom: 15px;
+.footer-section ul {
+    list-style: none;
+    padding: 0;
 }
 
-.testimonial-author h4 {
-    font-size: 1.25rem;
-    color: #333;
+.footer-section ul li {
+    margin-bottom: 8px;
 }
 
-.testimonial-role {
-    font-size: 1rem;
-    color: #999;
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.testimonial-rating {
-    color: #fbbf24;
+.footer-section ul li a:hover {
+    color: #f4a261;
+}
+
+.contact-btn {
+    background-color: #f4a261;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-btn:hover {
+    background-color: #e76f51;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f4a261;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #ccc;
 }
