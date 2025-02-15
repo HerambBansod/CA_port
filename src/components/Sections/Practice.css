@@ -19,11 +19,26 @@
         margin-top: 5rem;
     }
 }
+@media (max-width: 796px) {
+    .golden-div {
+        width: 40%;
+        height: 65rem;
+        translate: 31vw 1vh;
+        margin-top: 8rem;
+
+    }
+    .navbar-element ul li{
+        margin: 0.3rem;
+    }
+    .about-right{
+        margin-left: 0.5rem;
+    }
+}
 
 @media (max-width: 768px) {
     .golden-div {
         width: 40%;
-        height: 135rem;
+        height: 130rem;
         translate: 31vw 1vh;
         
     }
@@ -32,12 +47,12 @@
 @media (max-width: 480px) {
     .golden-div {
         width: 40%;
-        height: 140rem;
+        height: 150rem;
         translate: 31vw;
-        margin-top: 10rem;
+        margin-top: 6.5rem;
     }
 }
-
+ 
 .practices {
     display: flex;
     flex-direction: column;
