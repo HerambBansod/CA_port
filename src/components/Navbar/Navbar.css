@@ -67,6 +67,12 @@
   .navbar-element ul li{
     font-size: 20px;
     font-weight: 400;
+    border: none;
+    outline: none;
+  }
+  .navbar-element ul {
+    border: none;
+    outline: none;
   }
   .get-in-touch-btn{
      
@@ -99,6 +105,8 @@
     text-decoration: none;
     color: #453303;
     font-weight: 500;
+    border: none;
+    outline: none;
   }
   .link-li:hover{
     color: #453303;

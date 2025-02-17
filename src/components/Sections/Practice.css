@@ -221,7 +221,7 @@
 }
 
 .practices-head h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #fbbf24;
   font-family: "Jost", serif;
@@ -306,7 +306,7 @@
   }
 
   .practices-head h2 {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
 }
 @media screen and  (max-width: 480px){

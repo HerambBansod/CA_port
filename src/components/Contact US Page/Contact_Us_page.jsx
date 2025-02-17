@@ -1,4 +1,4 @@
-import React from 'react';
+ 
 import './Contact_Us_page.css';
 
 function App() {
