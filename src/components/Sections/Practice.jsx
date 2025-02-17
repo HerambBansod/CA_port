@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import { FaCircleXmark } from "react-icons/fa6";
 import { useState } from "react";
 import {
-  FaBriefcase,
+  // FaBriefcase,
   FaRegFileAlt,
-  FaGlobe,
-  FaBuilding,
-   
+  // FaGlobe,
+  // FaBuilding,
+    
 } from "react-icons/fa";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 

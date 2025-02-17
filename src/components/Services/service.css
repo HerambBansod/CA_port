@@ -1,12 +1,18 @@
 .service-hero-section {
     position: relative;
-    height: 50vh;
+    height: 60vh;
     margin-bottom: 40px;
     background-image: url('./HeroService_section.webp');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fbbf24;
-    font-family: "Jost", serif;
+    font-family: "Jost", sans-serif;
     font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     z-index: 1;
     overflow: hidden;
 }
@@ -18,9 +24,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.585);
+    background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
     z-index: -1;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -30,48 +36,122 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0;
-    width: 100%;
-    height: 40vh;
+    gap: 10px;
+    width: 80%;
+    height: 100%;
     animation: fadeIn 1s ease-out;
 }
 
 .service-head {
+    max-width: 700px;
     width: 60%;
 }
 
 .service-head h1 {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
     animation: fadeIn 1s ease-out;
 }
 
+.service-head p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
 .service-practice {
-    height: 270vh;
+    min-height: 100vh;
+    padding: 50px 20px;
 }
 
 .service-contactus {
-    height: 120vh;
+    min-height: 110vh;
+    padding: 50px 20px;
 }
 
-.service-contactus{
-    height: 120vh;
+@media screen and (max-width: 1024px) {
+    .service-head {
+        width: 80%;
+    }
+
+    .service-head h1 {
+        font-size: 2.2rem;
+    }
+
+    .service-head p {
+        font-size: 1.1rem;
+    }
+
+    .service-practice {
+        min-height: 120vh;
+    }
+
+    .service-contactus {
+        min-height: 110vh;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .service-head{
-        width: 100%;
-        padding: 30px;
+    .service-hero-section {
+        height: 50vh;
     }
 
-    .service-head h1{
+    .service-head {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .service-head h1 {
         font-size: 2rem;
     }
 
-    .service-head p{
+    .service-head p {
         font-size: 1rem;
     }
 
-    .service-practice{
-        height: 270vh;
+    .service-practice {
+        min-height: 140vh;
+    }
+
+    .service-contactus {
+        min-height: 120vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-hero-section {
+        height: 45vh;
+    }
+
+    .service-head {
+        width: 100%;
+    }
+
+    .service-head h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-head p {
+        font-size: 0.9rem;
+    }
+
+    .service-practice {
+        min-height: 160vh;
+    }
+
+    .service-contactus {
+        min-height: 130vh;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
