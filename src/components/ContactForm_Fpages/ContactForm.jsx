@@ -1,9 +1,11 @@
-import React from 'react'
+  
 import './ContactForm.css'
 import {FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function ContactForm() {
     return (
+        <>
+       
         <div className="contactus">
             <div className="contact-head">
                 <div className="head-content">
@@ -41,5 +43,6 @@ export default function ContactForm() {
                 </div>
             </div>
         </div>
+        </>
     )
 }

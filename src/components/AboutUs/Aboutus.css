@@ -1,188 +1,187 @@
-.about-Hero-section{
-    position: relative;
-    height: 50vh;
-    margin-bottom: 40px;
-    background-image: url('./Abouthead-bg.webp');
-    background-size: cover;
-    color: #fbbf24;
-    font-family: "Jost", serif;
-    font-size: 1.3rem;
-    z-index: 1;
-    overflow: hidden;
-}
+ .about-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-right: 1rem;
+  
+ }
+ /* Custom container */
+.custom-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Jost' !important;
+    margin-top: 3rem;
+  
+  }
 
-.about-Hero-section::before{
-    content: '';
+  .aboutus-left {
+    display: flex
+    ;
+        align-items: end;
+        justify-content: center;
+        padding: 1rem;
+  }
+  .about-achivement{
+    background-color: #fbbf24;
+    color: #453303
+    ;
+ 
+    display: flex;
+;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.585);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(10px);
-    z-index: -1;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.about-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    width: 100%;
-    height: 40vh;
-    animation: fadeIn 1s ease-out;
-}
-
-.about-head{
-    height: 100vh;
-    width: 60%;
-}
-
-.about-head h1{
-    font-size: 3rem;
-    text-align: center;
-    animation: fadeIn 1s ease-out;
-}
-
-/* Story Section  */
-
-.Story-section{
-    height: 100vh;
-    display: flex;
-}
-
-.story-left{
-    width: 30%;
-    background-color: #fbbf24;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.story{
-    width: 50%;
-}
-
-.story h1{
-    font-family: "Jost", serif;
-    font-size: 2rem;
-    animation: fadeIn 1s ease-out;
-}
-
-.story p{
-    font-size: 1.3rem;
-    font-family: "Jost", serif;
-    animation: fadeIn 1s ease-out;
-}
-
-.story-right{
-    width: 70%;
-    background-image: url('./CA_img.webp');
-    background-size: cover;
-    animation: fadeIn 1s ease-out;
-}
-
-/* Why Us Section */
-.whyus-section{
-    height: 100vh;
-    background-color: #fbbf24;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Jost", serif;   
-}
-
-.whyus-left{
-    width: 30%;
-    background-image: url('./About-Whyus.webp');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
-
-.whyus-right{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-}
-
-.whyus-right h1{
-    text-align: start;
-}
-
-.whyus-right p{
-    text-align: start;
-}
-
-.about-contact{
-    height: 120vh;
-}
-
-@media screen and (max-width: 768px){
-
-    .about-head{
-        width: 90%;
+    z-index: 1;
+    width: max-content;
+    translate: 12rem 4rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+border-radius: 0rem 0rem 7rem 0rem;
     }
 
-    .about-head h1{
+    .about-achivement img{
+      width: 45%;
+    }
+    .about-achivement p{
+       font-weight: 500;
+      margin-top: 0rem;
+    }
+    .about-achivement span{
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 1rem  ;
+      
+    }
+
+  .about-right  {
+      display: flex
+      ;
+          flex-direction: column;
+          align-items: flex-start;
+          row-gap: 0.5rem;
+          padding: 1rem;
+          margin-left: 5rem;
+      }
+      .about-right span{
+        font-size: 24px;
+        color: #f5b40b;
+        font-weight: 500;
+      }
+      .about-right h1  {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+      }
+
+      .about-right ul {
+    list-style: none;
+    display: flex
+;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: -2.5rem;
+    row-gap: 1.5rem;
+   }
+
+ .about-right ul li  {
+    display: flex
+    ;
+        align-items: center;
+        color: #fbbf24;
+        font-size: 1.5rem;
+   }
+
+   .about-right ul li span{
+    margin-left: 1rem;
+    color: #000;
+   }
+
+.about-right button{
+  font-size: 20px;
+    padding: 0.7rem;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    color: #453303;
+    background-color: #fccb4d;
+}
+   
+  /* Media queries for different screen sizes */
+  @media (min-width: 576px) {
+    .custom-container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .custom-container {
+      max-width: 720px;
+      
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .custom-container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .custom-container {
+      max-width: 1140px;
+    }
+  }
+ 
+
+  @media (max-width: 768px) {
+    .custom-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .aboutus-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutus-left img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .about-achivement {
+        flex-direction: row;
+        translate: 0px 6rem;
+        padding: 1rem;
+        width: 80%;
+        border-radius: 0rem 0rem 3rem 0rem;
+    }
+    .about-achivement img {
+        width: 20%;
+    }
+    .about-achivement p {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        line-height: 1.5rem;
+    }
+    .about-achivement span {
+        margin-top: 0;
+        margin-left: 1rem;
         font-size: 2rem;
     }
-
-    .about-head p{
-        font-size: 1rem;
+    .about-right {
+        margin-top: 2rem;
+        padding: 2rem;
+        margin-left: 0;
     }
-
-    .Story-section{
-        display: flex;
-        flex-direction: column;
-        height: 55vh;
-    }
-
-    .story-left{
-        width: 100%;
-    }
-
-    .story{
-        width: 90%;
-    }
-
-    .story h1{
-        text-align: center;
-    }
-
-    .story-right{
-        display: hidden;
-    }
-
-    .about-practices{
-        height: 260vh;
-    }
-
-    .whyus-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .whyus-left{
-        height: 30vh;
-        width: 100%;
-    }
-
-    .whyus-right{
-        background-color: #ffffff00;
-        width: 100%;
-        padding: 30px;
-    }
-
-    .whyus-right p{
-        text-align: center;
+    .about-right h1{
+      font-size: 2rem;
     }
 }

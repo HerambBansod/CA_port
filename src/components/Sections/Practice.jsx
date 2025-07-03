@@ -8,8 +8,9 @@ import {
   FaRegFileAlt,
   FaGlobe,
   FaBuilding,
-  FaCheck,
+   
 } from "react-icons/fa";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default function Practice() {
     const [selectedService, setSelectedService] = useState(null);
@@ -17,12 +18,9 @@ export default function Practice() {
     {
       title: "Tax Services",
       icon: <FaRegFileAlt className="w-8 h-8 text-blue-600" />,
-      description: "Comprehensive tax solutions for businesses and individuals",
+      description: "Comprehensive tax solutions for businesses and individuals. Ensure accurate and compliant tax filings with our professional tax services.",
       items: [
-        "GST Return Filing - Monthly/Quarterly returns",
-        "Annual GST Returns & Compliance",
-        "ITR Filing & Tax Planning",
-        "International Tax Advisory",
+         
       ],
       details: {
         sections: [
@@ -52,111 +50,170 @@ export default function Practice() {
       },
     },
     {
-      title: "Business Services",
-      icon: <FaBuilding className="w-8 h-8 text-blue-600" />,
-      description: "End-to-end business registration and accounting solutions",
+      title: "Tax Services",
+      icon: <FaRegFileAlt className="w-8 h-8 text-blue-600" />,
+      description: "Comprehensive tax solutions for businesses and individuals. Ensure accurate and compliant tax filings with our professional tax services.",
       items: [
-        "Company Registration - All Types",
-        "Professional Accounting Services",
-        "Financial Statements & Reporting",
-        "Business Compliance Management",
+         
       ],
       details: {
         sections: [
           {
-            title: "Company Registration",
+            title: "GST Services",
             content: [
-              "Private Limited Company Registration",
-              "Limited Liability Partnership (LLP)",
-              "One Person Company Registration",
-              "Partnership Firm Registration",
-              "MSME Registration",
-              "Foreign Company Registration",
+              "Monthly/Quarterly GSTR-1 and GSTR-3B Filing",
+              "Annual GST Return Filing (GSTR-9)",
+              "GST Registration and Cancellation",
+              "Input Tax Credit Reconciliation",
+              "GST Audit Assistance",
+              "E-way Bill Generation",
             ],
           },
           {
-            title: "Accounting Services",
+            title: "Income Tax Services",
             content: [
-              "Bookkeeping and Accounting",
-              "Financial Statement Preparation",
-              "Bank Reconciliation",
-              "MIS Reporting",
-              "Payroll Processing",
-              "Internal Audits",
+              "Individual and Business Tax Returns",
+              "Tax Planning and Consultation",
+              "International Tax Advisory",
+              "Transfer Pricing Documentation",
+              "Tax Audit Support",
+              "Advance Tax Calculation",
             ],
           },
         ],
       },
     },
     {
-      title: "Digital Solutions",
-      icon: <FaGlobe className="w-8 h-8 text-blue-600" />,
-      description: "Modern digital and branding solutions for growth",
+      title: "Tax Services",
+      icon: <FaRegFileAlt className="w-8 h-8 text-blue-600" />,
+      description: "Comprehensive tax solutions for businesses and individuals. Ensure accurate and compliant tax filings with our professional tax services.",
       items: [
-        "Brand Creation & Strategy",
-        "Digital Marketing Services",
-        "Online Presence Development",
-        "Social Media Management",
+         
       ],
       details: {
         sections: [
           {
-            title: "Brand Creation",
+            title: "GST Services",
             content: [
-              "Brand Strategy Development",
-              "Visual Identity Design",
-              "Brand Guidelines Creation",
-              "Brand Voice Development",
-              "Trademark Registration",
-              "Brand Protection Services",
+              "Monthly/Quarterly GSTR-1 and GSTR-3B Filing",
+              "Annual GST Return Filing (GSTR-9)",
+              "GST Registration and Cancellation",
+              "Input Tax Credit Reconciliation",
+              "GST Audit Assistance",
+              "E-way Bill Generation",
             ],
           },
           {
-            title: "Digital Marketing",
+            title: "Income Tax Services",
             content: [
-              "Social Media Marketing",
-              "Content Strategy",
-              "SEO Optimization",
-              "Email Marketing",
-              "PPC Advertising",
-              "Analytics and Reporting",
+              "Individual and Business Tax Returns",
+              "Tax Planning and Consultation",
+              "International Tax Advisory",
+              "Transfer Pricing Documentation",
+              "Tax Audit Support",
+              "Advance Tax Calculation",
             ],
           },
         ],
       },
     },
     {
-      title: "Career Services",
-      icon: <FaBriefcase className="w-8 h-8 text-blue-600" />,
-      description: "Professional career development opportunities",
+      title: "Tax Services",
+      icon: <FaRegFileAlt className="w-8 h-8 text-blue-600" />,
+      description: "Comprehensive tax solutions for businesses and individuals. Ensure accurate and compliant tax filings with our professional tax services.",
       items: [
-        "Job Portal Access",
-        "Career Guidance",
-        "Industry Opportunities",
-        "Professional Development",
+         
       ],
       details: {
         sections: [
           {
-            title: "Career Development",
+            title: "GST Services",
             content: [
-              "Resume Building Services",
-              "Interview Preparation",
-              "Skill Assessment",
-              "Career Path Planning",
-              "Industry Networking",
-              "Professional Certifications",
+              "Monthly/Quarterly GSTR-1 and GSTR-3B Filing",
+              "Annual GST Return Filing (GSTR-9)",
+              "GST Registration and Cancellation",
+              "Input Tax Credit Reconciliation",
+              "GST Audit Assistance",
+              "E-way Bill Generation",
             ],
           },
           {
-            title: "Job Portal",
+            title: "Income Tax Services",
             content: [
-              "Job Listings and Alerts",
-              "Company Profile Access",
-              "Application Tracking",
-              "Employer Connections",
-              "Career Resources Library",
-              "Professional Development Workshops",
+              "Individual and Business Tax Returns",
+              "Tax Planning and Consultation",
+              "International Tax Advisory",
+              "Transfer Pricing Documentation",
+              "Tax Audit Support",
+              "Advance Tax Calculation",
+            ],
+          },
+        ],
+      },
+    },
+    {
+      title: "Tax Services",
+      icon: <FaRegFileAlt className="w-8 h-8 text-blue-600" />,
+      description: "Comprehensive tax solutions for businesses and individuals. Ensure accurate and compliant tax filings with our professional tax services.",
+      items: [
+         
+      ],
+      details: {
+        sections: [
+          {
+            title: "GST Services",
+            content: [
+              "Monthly/Quarterly GSTR-1 and GSTR-3B Filing",
+              "Annual GST Return Filing (GSTR-9)",
+              "GST Registration and Cancellation",
+              "Input Tax Credit Reconciliation",
+              "GST Audit Assistance",
+              "E-way Bill Generation",
+            ],
+          },
+          {
+            title: "Income Tax Services",
+            content: [
+              "Individual and Business Tax Returns",
+              "Tax Planning and Consultation",
+              "International Tax Advisory",
+              "Transfer Pricing Documentation",
+              "Tax Audit Support",
+              "Advance Tax Calculation",
+            ],
+          },
+        ],
+      },
+    },
+    {
+      title: "Tax Services",
+      icon: <FaRegFileAlt className="w-8 h-8 text-blue-600" />,
+      description: "Comprehensive tax solutions for businesses and individuals. Ensure accurate and compliant tax filings with our professional tax services.",
+      items: [
+         
+      ],
+      details: {
+        sections: [
+          {
+            title: "GST Services",
+            content: [
+              "Monthly/Quarterly GSTR-1 and GSTR-3B Filing",
+              "Annual GST Return Filing (GSTR-9)",
+              "GST Registration and Cancellation",
+              "Input Tax Credit Reconciliation",
+              "GST Audit Assistance",
+              "E-way Bill Generation",
+            ],
+          },
+          {
+            title: "Income Tax Services",
+            content: [
+              "Individual and Business Tax Returns",
+              "Tax Planning and Consultation",
+              "International Tax Advisory",
+              "Transfer Pricing Documentation",
+              "Tax Audit Support",
+              "Advance Tax Calculation",
             ],
           },
         ],
@@ -188,7 +245,7 @@ export default function Practice() {
             <ul className="modal-section-list">
               {section.content.map((item, itemIndex) => (
                 <li key={itemIndex} className="modal-section-item">
-                  <FaCheck className="modal-section-icon" />
+                  <MdKeyboardDoubleArrowRight className="modal-section-icon" />
                   <span className="modal-section-text">{item}</span>
                 </li>
               ))}
@@ -226,26 +283,32 @@ export default function Practice() {
   return (
     <div className="practices">
       <div className="practices-head">
-        <h2>Our Practices</h2>
+        <h2>Our Services</h2>
       </div>
+      <div className="golden-div">
+        
+        </div>
+      
       <div className="practices-items">
+  
         {services.map((service, index) => (
           <div className="practice-item" key={index}>
             <div className="practice-icon">{service.icon}</div>
             <h3>{service.title}</h3>
             <p>
-              <FaCheck
+              <MdKeyboardDoubleArrowRight
                 style={{
                   color: "green",
                   fontSize: "1.2rem",
                   marginRight: "8px",
                 }}
               />
+              
               {service.description}
             </p>
             {service.items.map((item, idx) => (
               <p key={idx}>
-                <FaCheck
+                <MdKeyboardDoubleArrowRight
                   style={{
                     color: "green",
                     fontSize: "1.2rem",
