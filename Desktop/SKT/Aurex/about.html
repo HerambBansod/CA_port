@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Aurex | AI-Powered Automation & Digital Solutions</title>
+  <meta name="description" content="Learn about Aurex, transforming businesses with AI automation, web development, and modern digital solutions.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.aurex.sg/about.html">
+  <meta property="og:title" content="About Us | Aurex | AI-Powered Automation & Digital Solutions">
+  <meta property="og:description" content="Learn about Aurex, transforming businesses with AI automation, web development, and modern digital solutions.">
+  <meta property="og:image" content="https://www.aurex.sg/hero_preview.png">
+  <meta property="og:image:secure_url" content="https://www.aurex.sg/hero_preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Aurex">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.aurex.sg/about.html">
+  <meta property="twitter:title" content="About Us | Aurex | AI-Powered Automation & Digital Solutions">
+  <meta property="twitter:description" content="Learn about Aurex, transforming businesses with AI automation, web development, and modern digital solutions.">
+  <meta property="twitter:image" content="https://www.aurex.sg/hero_preview.png">
+
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    .story-section {
+      padding: 100px 0;
+      background: var(--clean-white);
+    }
+    .story-grid {
+      display: grid;
+      grid-template-columns: 6.5fr 5.5fr;
+      gap: 72px;
+      align-items: center;
+    }
+    .story-content {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+    }
+    .stats-card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .stat-box {
+      background: var(--soft-blue);
+      border: 1px solid var(--line-grey);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .stat-number {
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--ocean-blue);
+      margin-bottom: 6px;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .values-section {
+      padding: 100px 0;
+      background: var(--mist-grey);
+      border-top: 1px solid var(--line-grey);
+      border-bottom: 1px solid var(--line-grey);
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .value-card {
+      background: var(--clean-white);
+      border-radius: var(--radius-md);
+      padding: 38px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    @media (max-width: 991px) {
+      .story-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .values-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Drawer Overlay -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- Mobile Drawer -->
+  <aside class="drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <button class="drawer__close" aria-label="Close Menu">
+      <svg class="icon icon--large" viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12" />
+      </svg>
+    </button>
+    <ul class="drawer__links">
+      <li><a href="./index.html" class="drawer__link">Home</a></li>
+      <li><a href="./solutions.html" class="drawer__link">Solutions</a></li>
+      <li><a href="./projects.html" class="drawer__link">Projects</a></li>
+      <li><a href="./about.html" class="drawer__link active">About Us</a></li>
+      <li><a href="./insights.html" class="drawer__link">Insights</a></li>
+    </ul>
+    <div class="drawer__bottom">
+      <a href="./contact.html" class="btn btn--primary" style="width: 100%;">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- Header -->
+  <header class="header" id="main-header">
+    <div class="container header__container">
+      <a href="./index.html" class="logo-link" aria-label="AUREX Home">
+        <img src="./assets/logo.png" alt="AUREX Logo" class="logo-img">
+      </a>
+      <nav class="nav" aria-label="Desktop Navigation">
+        <a href="./index.html" class="nav__link">Home</a>
+        <a href="./solutions.html" class="nav__link">Solutions</a>
+        <a href="./projects.html" class="nav__link">Projects</a>
+        <a href="./about.html" class="nav__link active">About Us</a>
+        <a href="./insights.html" class="nav__link">Insights</a>
+      </nav>
+      <a href="./contact.html" class="btn btn--primary header__cta-btn">Contact Us</a>
+      <button class="mobile-nav-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+        <svg class="icon icon--large" viewBox="0 0 24 24">
+          <path class="hamburger-line-1" d="M4 6h16" />
+          <path class="hamburger-line-2" d="M4 12h16" />
+          <path class="hamburger-line-3" d="M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Header -->
+  <section class="subpage-header">
+    <div class="container">
+      <h1 class="subpage-header__title">About AUREX</h1>
+      <p class="subpage-header__desc">
+        AUREX is a Singapore-based weather technology company delivering advanced environmental monitoring hardware, meteorological intelligence, and data-driven solutions across Asia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story-section">
+    <div class="container story-grid">
+      <div class="story-content reveal">
+        <h2 class="section-header__title" style="font-size: 32px;">Weather Intelligence for Operational Resilience</h2>
+        <p>
+          We specialize in the design, integration, deployment, and support of weather monitoring systems that help governments, infrastructure operators, utilities, aviation stakeholders, renewable energy developers, and enterprise customers make smarter operational decisions in rapidly changing environments.
+        </p>
+        <p>
+          With operations and partnerships throughout Southeast Asia, South Asia, and the broader Asia-Pacific region, AUREX combines modern sensing technologies, real-time data acquisition, and intelligent analytics to provide reliable weather and environmental insights where they matter most.
+        </p>
+        <p>
+          Inspired by the evolving capabilities of modern meteorological and environmental technology providers in Singapore and internationally, AUREX focuses on delivering scalable, high-reliability systems backed by responsive regional support and long-term customer partnerships.
+        </p>
+      </div>
+      
+      <div class="stats-card-grid reveal stagger-1">
+        <!-- HQ -->
+        <div class="stat-box">
+          <div class="stat-number">SG</div>
+          <div class="stat-label">Headquarters</div>
+        </div>
+        <!-- Support -->
+        <div class="stat-box">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Data Feeds</div>
+        </div>
+        <!-- Deliveries -->
+        <div class="stat-box">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">End-To-End</div>
+        </div>
+        <!-- Region -->
+        <div class="stat-box">
+          <div class="stat-number">APAC</div>
+          <div class="stat-label">Deployments</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Beliefs Section -->
+  <section class="values-section">
+    <div class="container">
+      <div class="section-header section-header--center reveal">
+        <h2 class="section-header__title">Our Commitment</h2>
+        <p class="section-header__sub">Driven by innovation and regional expertise to help organizations protect assets and build resilience.</p>
+      </div>
+
+      <div class="values-grid">
+        <!-- Resilience -->
+        <div class="value-card reveal stagger-1">
+          <div class="card__icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3 class="card__title" style="font-size: 18px;">Enabling Resilience</h3>
+          <p class="card__body">At AUREX, we believe weather intelligence is no longer just about forecasting — it is about enabling resilience, operational continuity, safety, sustainability, and better strategic planning.</p>
+        </div>
+
+        <!-- Demanding Environments -->
+        <div class="value-card reveal stagger-2">
+          <div class="card__icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+              <line x1="4" y1="22" x2="4" y2="15" />
+            </svg>
+          </div>
+          <h3 class="card__title" style="font-size: 18px;">Demanding Operations</h3>
+          <p class="card__body">Our team works closely with customers to develop practical, deployment-ready solutions that operate effectively in some of the world’s most demanding tropical and coastal environments.</p>
+        </div>
+
+        <!-- Regional Collaboration -->
+        <div class="value-card reveal stagger-3">
+          <div class="card__icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="card__title" style="font-size: 18px;">Regional Expertise</h3>
+          <p class="card__body">AUREX is committed to helping organizations across Asia harness the power of environmental data to protect assets, improve performance, and build a more resilient future.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="./assets/logo.png" alt="AUREX Logo" class="footer__logo-img">
+        <p class="footer__text">
+          Singapore-based weather technology company delivering environmental monitoring systems and meteorological intelligence across Asia.
+        </p>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__col-title">Solutions</h3>
+        <ul class="footer__links">
+          <li><a href="./solutions.html#weather-stations" class="footer__link">Weather Stations</a></li>
+          <li><a href="./solutions.html#hydromet-systems" class="footer__link">Hydromet Systems</a></li>
+          <li><a href="./solutions.html#lightning-detection" class="footer__link">Lightning Detection</a></li>
+          <li><a href="./solutions.html#aviation-weather" class="footer__link">Aviation Weather</a></li>
+          <li><a href="./solutions.html#renewable-energy" class="footer__link">Renewable Energy</a></li>
+          <li><a href="./solutions.html#data-platforms" class="footer__link">Data Platforms</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__col-title">Company</h3>
+        <ul class="footer__links">
+          <li><a href="./about.html" class="footer__link">About Us</a></li>
+          <li><a href="./projects.html" class="footer__link">Projects</a></li>
+          <li><a href="./insights.html" class="footer__link">Insights</a></li>
+          <li><a href="./contact.html" class="footer__link">Careers</a></li>
+          <li><a href="./contact.html" class="footer__link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__col-title">Contact</h3>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <svg class="icon footer__contact-icon" viewBox="0 0 24 24">
+              <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>Singapore</span>
+          </li>
+          <li class="footer__contact-item">
+            <svg class="icon footer__contact-icon" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+65 6900 3948</span>
+          </li>
+          <li class="footer__contact-item">
+            <svg class="icon footer__contact-icon" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <a href="mailto:enquiry@aurex.sg" class="footer__link">enquiry@aurex.sg</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span class="footer__copyright">© 2025 AUREX Pte. Ltd. All rights reserved.</span>
+      <div class="footer__bottom-links">
+        <a href="./about.html" class="footer__bottom-link">Privacy Policy</a>
+        <a href="./about.html" class="footer__bottom-link">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

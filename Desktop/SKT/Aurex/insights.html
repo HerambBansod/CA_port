@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights & Articles | Aurex | AI-Powered Automation & Digital Solutions</title>
+  <meta name="description" content="Read expert insights on AI automation, web development, and digital solutions from Aurex.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.aurex.sg/insights.html">
+  <meta property="og:title" content="Insights & Articles | Aurex | AI-Powered Automation & Digital Solutions">
+  <meta property="og:description" content="Read expert insights on AI automation, web development, and digital solutions from Aurex.">
+  <meta property="og:image" content="https://www.aurex.sg/hero_preview.png">
+  <meta property="og:image:secure_url" content="https://www.aurex.sg/hero_preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Aurex">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.aurex.sg/insights.html">
+  <meta property="twitter:title" content="Insights & Articles | Aurex | AI-Powered Automation & Digital Solutions">
+  <meta property="twitter:description" content="Read expert insights on AI automation, web development, and digital solutions from Aurex.">
+  <meta property="twitter:image" content="https://www.aurex.sg/hero_preview.png">
+
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      padding: 100px 0;
+    }
+    .article-card {
+      background: var(--clean-white);
+      border: 1px solid var(--line-grey);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: var(--transition-global);
+    }
+    .article-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: #A9C7E8;
+    }
+    .article-img-wrapper {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+    .article-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-global);
+    }
+    .article-card:hover .article-img {
+      transform: scale(1.04);
+    }
+    .article-content {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
+    }
+    .article-meta {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .article-title {
+      font-size: 18px;
+      color: var(--primary-navy);
+      line-height: 1.3;
+    }
+    .article-excerpt {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .article-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ocean-blue);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: auto;
+    }
+    .article-link:hover {
+      color: var(--primary-navy);
+    }
+    @media (max-width: 991px) {
+      .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 575px) {
+      .articles-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Drawer Overlay -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- Mobile Drawer -->
+  <aside class="drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <button class="drawer__close" aria-label="Close Menu">
+      <svg class="icon icon--large" viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12" />
+      </svg>
+    </button>
+    <ul class="drawer__links">
+      <li><a href="./index.html" class="drawer__link">Home</a></li>
+      <li><a href="./solutions.html" class="drawer__link">Solutions</a></li>
+      <li><a href="./projects.html" class="drawer__link">Projects</a></li>
+      <li><a href="./about.html" class="drawer__link">About Us</a></li>
+      <li><a href="./insights.html" class="drawer__link active">Insights</a></li>
+    </ul>
+    <div class="drawer__bottom">
+      <a href="./contact.html" class="btn btn--primary" style="width: 100%;">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- Header -->
+  <header class="header" id="main-header">
+    <div class="container header__container">
+      <a href="./index.html" class="logo-link" aria-label="AUREX Home">
+        <img src="./assets/logo.png" alt="AUREX Logo" class="logo-img">
+      </a>
+      <nav class="nav" aria-label="Desktop Navigation">
+        <a href="./index.html" class="nav__link">Home</a>
+        <a href="./solutions.html" class="nav__link">Solutions</a>
+        <a href="./projects.html" class="nav__link">Projects</a>
+        <a href="./about.html" class="nav__link">About Us</a>
+        <a href="./insights.html" class="nav__link active">Insights</a>
+      </nav>
+      <a href="./contact.html" class="btn btn--primary header__cta-btn">Contact Us</a>
+      <button class="mobile-nav-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+        <svg class="icon icon--large" viewBox="0 0 24 24">
+          <path class="hamburger-line-1" d="M4 6h16" />
+          <path class="hamburger-line-2" d="M4 12h16" />
+          <path class="hamburger-line-3" d="M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Header -->
+  <section class="subpage-header">
+    <div class="container">
+      <h1 class="subpage-header__title">Insights & Analysis</h1>
+      <p class="subpage-header__desc">
+        Explore technical reports, environmental trends, and operational guidelines drafted by the AUREX engineering and research team in Singapore.
+      </p>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <main class="container">
+    <div class="articles-grid">
+      <!-- Article 1 -->
+      <article class="article-card reveal stagger-1">
+        <div class="article-img-wrapper">
+          <img src="./assets/flood_warning.png" alt="River gauge monitoring station in river basin" class="article-img">
+        </div>
+        <div class="article-content">
+          <span class="article-meta">Hydromet • Tech Report</span>
+          <h2 class="article-title">Evaluating Radar Water Level Sensor Accuracy in Monsoon Climates</h2>
+          <p class="article-excerpt">
+            A comprehensive study on why non-contact radar level sensors outperform traditional pressure transducers during heavy tropical monsoons, avoiding damage from log impacts and mud sedimentation.
+          </p>
+          <a href="#" class="article-link">Read Full Report →</a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="article-card reveal stagger-2">
+        <div class="article-img-wrapper">
+          <img src="./assets/airport_weather.png" alt="Aviation weather station near airport runway" class="article-img">
+        </div>
+        <div class="article-content">
+          <span class="article-meta">Aviation • Operational Safety</span>
+          <h2 class="article-title">Managing Severe Storm Risks in Asia-Pacific Airport Operations</h2>
+          <p class="article-excerpt">
+            How integrated AWOS platforms and lightning detection networks mitigate operational risks during flash storm occurrences, minimizing runway closures and ensuring airline safety compliance.
+          </p>
+          <a href="#" class="article-link">Read Full Report →</a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="article-card reveal stagger-3">
+        <div class="article-img-wrapper">
+          <img src="./assets/renewable_energy.png" alt="Solar panels and wind turbines farm" class="article-img">
+        </div>
+        <div class="article-content">
+          <span class="article-meta">Solar Energy • Operational Efficiency</span>
+          <h2 class="article-title">Solar PR Optimization: The Impact of Dust and Soiling Sensors</h2>
+          <p class="article-excerpt">
+            Analyzing ambient weather variables to optimize cleaning cycles in utility-scale solar farms across Southeast Asia. How ambient dust levels and humidity metrics influence power output profiles.
+          </p>
+          <a href="#" class="article-link">Read Full Report →</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Download Report Split Section -->
+  <section class="insights-split" style="background: var(--soft-blue); border-top: 1px solid var(--line-grey); padding: 100px 0;">
+    <div class="container insights-split__container">
+      <div class="insights-split__left reveal">
+        <h2 class="section-header__title">2026 Asia-Pacific Hydromet Infrastructure Report</h2>
+        <p class="insights-split__body">
+          Download our comprehensive regional engineering white paper outlining deployment parameters, communication architecture design, and calibration protocols for early warning weather networks in tropical regions.
+        </p>
+        <div style="margin-top: 24px;">
+          <a href="./contact.html?download=2026-report" class="btn btn--primary">Download Free Report</a>
+        </div>
+      </div>
+      <div class="insights-split__right reveal stagger-1">
+        <img src="./assets/dashboard_ui.png" alt="Environmental Monitoring Dashboard Mockup" class="insights-split__image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="./assets/logo.png" alt="AUREX Logo" class="footer__logo-img">
+        <p class="footer__text">
+          Singapore-based weather technology company delivering environmental monitoring systems and meteorological intelligence across Asia.
+        </p>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__col-title">Solutions</h3>
+        <ul class="footer__links">
+          <li><a href="./solutions.html#weather-stations" class="footer__link">Weather Stations</a></li>
+          <li><a href="./solutions.html#hydromet-systems" class="footer__link">Hydromet Systems</a></li>
+          <li><a href="./solutions.html#lightning-detection" class="footer__link">Lightning Detection</a></li>
+          <li><a href="./solutions.html#aviation-weather" class="footer__link">Aviation Weather</a></li>
+          <li><a href="./solutions.html#renewable-energy" class="footer__link">Renewable Energy</a></li>
+          <li><a href="./solutions.html#data-platforms" class="footer__link">Data Platforms</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__col-title">Company</h3>
+        <ul class="footer__links">
+          <li><a href="./about.html" class="footer__link">About Us</a></li>
+          <li><a href="./projects.html" class="footer__link">Projects</a></li>
+          <li><a href="./insights.html" class="footer__link">Insights</a></li>
+          <li><a href="./contact.html" class="footer__link">Careers</a></li>
+          <li><a href="./contact.html" class="footer__link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__col-title">Contact</h3>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <svg class="icon footer__contact-icon" viewBox="0 0 24 24">
+              <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>Singapore</span>
+          </li>
+          <li class="footer__contact-item">
+            <svg class="icon footer__contact-icon" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+65 6900 3948</span>
+          </li>
+          <li class="footer__contact-item">
+            <svg class="icon footer__contact-icon" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <a href="mailto:enquiry@aurex.sg" class="footer__link">enquiry@aurex.sg</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span class="footer__copyright">© 2025 AUREX Pte. Ltd. All rights reserved.</span>
+      <div class="footer__bottom-links">
+        <a href="./about.html" class="footer__bottom-link">Privacy Policy</a>
+        <a href="./about.html" class="footer__bottom-link">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

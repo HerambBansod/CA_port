@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flood Warning Systems & Hydromet | Aurex | AI-Powered Automation & Digital Solutions</title>
+  <meta name="description" content="Integrated rainfall and flood warning monitoring systems. Protect communities and infrastructure with AI automation and digital solutions from Aurex.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.aurex.sg/solutions-flood-warning.html">
+  <meta property="og:title" content="Flood Warning Systems & Hydromet | Aurex | AI-Powered Automation & Digital Solutions">
+  <meta property="og:description" content="Integrated rainfall and flood warning monitoring systems. Protect communities and infrastructure with AI automation and digital solutions from Aurex.">
+  <meta property="og:image" content="https://www.aurex.sg/hero_preview.png">
+  <meta property="og:image:secure_url" content="https://www.aurex.sg/hero_preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Aurex">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.aurex.sg/solutions-flood-warning.html">
+  <meta property="twitter:title" content="Flood Warning Systems & Hydromet | Aurex | AI-Powered Automation & Digital Solutions">
+  <meta property="twitter:description" content="Integrated rainfall and flood warning monitoring systems. Protect communities and infrastructure with AI automation and digital solutions from Aurex.">
+  <meta property="twitter:image" content="https://www.aurex.sg/hero_preview.png">
+
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    .features-list-sec {
+      padding: 100px 0;
+      background: var(--clean-white);
+    }
+    .feature-item-card {
+      background: var(--mist-grey);
+      border: 1px solid var(--line-grey);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .alert-panel-preview {
+      background: var(--deep-navy);
+      color: var(--clean-white);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      margin: 56px 0;
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      gap: 40px;
+      align-items: center;
+      box-shadow: var(--shadow-xl);
+    }
+    .siren-badge {
+      background: rgba(242, 122, 26, 0.15);
+      color: var(--signal-orange);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Drawer Overlay -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- Mobile Drawer -->
+  <aside class="drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <button class="drawer__close" aria-label="Close Menu">
+      <svg class="icon icon--large" viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12" />
+      </svg>
+    </button>
+    <ul class="drawer__links">
+      <li><a href="./index.html" class="drawer__link">Home</a></li>
+      <li><a href="./solutions.html" class="drawer__link active">Solutions</a></li>
+      <li><a href="./projects.html" class="drawer__link">Projects</a></li>
+      <li><a href="./about.html" class="drawer__link">About Us</a></li>
+      <li><a href="./insights.html" class="drawer__link">Insights</a></li>
+    </ul>
+    <div class="drawer__bottom">
+      <a href="./contact.html" class="btn btn--primary" style="width: 100%;">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- Header -->
+  <header class="header" id="main-header">
+    <div class="container header__container">
+      <a href="./index.html" class="logo-link" aria-label="AUREX Home">
+        <img src="./assets/logo.png" alt="AUREX Logo" class="logo-img">
+      </a>
+      <nav class="nav" aria-label="Desktop Navigation">
+        <a href="./index.html" class="nav__link">Home</a>
+        <a href="./solutions.html" class="nav__link active">Solutions</a>
+        <a href="./projects.html" class="nav__link">Projects</a>
+        <a href="./about.html" class="nav__link">About Us</a>
+        <a href="./insights.html" class="nav__link">Insights</a>
+      </nav>
+      <a href="./contact.html" class="btn btn--primary header__cta-btn">Contact Us</a>
+      <button class="mobile-nav-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+        <svg class="icon icon--large" viewBox="0 0 24 24">
+          <path class="hamburger-line-1" d="M4 6h16" />
+          <path class="hamburger-line-2" d="M4 12h16" />
+          <path class="hamburger-line-3" d="M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Header -->
+  <section class="subpage-header" style="background: linear-gradient(180deg, var(--sky-blue) 0%, var(--clean-white) 100%);">
+    <div class="container">
+      <h1 class="subpage-header__title">Flood Warning & River Level Systems</h1>
+      <p class="subpage-header__desc">
+        Scalable rainfall, drainage, river-level, and flood warning networks built specifically for high-intensity tropical monsoon zones, coastal plains, and dense urban catchments.
+      </p>
+    </div>
+  </section>
+
+  <!-- Split Detail Section -->
+  <section class="solution-detail-section">
+    <div class="container insights-split__container">
+      <div class="insights-split__left reveal">
+        <h2 class="section-header__title">Early Detection for Operational Resilience</h2>
+        <p class="insights-split__body">
+          AUREX flood warning stations combine high-accuracy non-contact radar level sensors with telemetry logic to detect rising water lines instantly. Operating on dual cellular and satellite networks, they ensure data transmission remains active even during extreme storm events when local power or telecom infrastructure fails.
+        </p>
+        <p class="insights-split__body" style="margin-top: 16px;">
+          These systems integrate with civic databases, sirens, and cloud alerting systems to give municipal authorities and industrial plant managers vital hours to deploy barriers, clear drains, and evacuate fields.
+        </p>
+      </div>
+      <div class="insights-split__right reveal stagger-1">
+        <img src="./assets/flood_warning.png" alt="Flood monitoring station near river" class="insights-split__image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Features Grid -->
+  <section class="features-list-sec">
+    <div class="container">
+      <div class="section-header section-header--center reveal">
+        <h2 class="section-header__title">Key Technical Capabilities</h2>
+        <p class="section-header__sub">Designed for extreme tropical weather and high-load communication requirements.</p>
+      </div>
+      
+      <div class="cards-container">
+        <!-- Radar -->
+        <div class="feature-item-card reveal stagger-1">
+          <div class="card__icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+              <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+          </div>
+          <h3 class="card__title">Non-Contact Radar Sensing</h3>
+          <p class="card__body">Radar level sensors measure water lines continuously from bridges or gantries, avoiding physical contact with debris, mud, or rapid river currents.</p>
+        </div>
+
+        <!-- Telemetry -->
+        <div class="feature-item-card reveal stagger-2">
+          <div class="card__icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3 class="card__title">Redundant Telemetry</h3>
+          <p class="card__body">Includes multi-band 4G/LTE connectivity with fallback to satellite or LPWAN (LoRaWAN) to guarantee transmission under all weather scenarios.</p>
+        </div>
+
+        <!-- Local Sirens -->
+        <div class="feature-item-card reveal stagger-3">
+          <div class="card__icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0" />
+            </svg>
+          </div>
+          <h3 class="card__title">Automated Local Sirens</h3>
+          <p class="card__body">Stations can trigger nearby strobe lights and warning horns locally when critical water levels are breached, bypassing software latencies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Warning Panel Preview -->
+  <section class="container" style="padding-bottom: 100px;">
+    <div class="alert-panel-preview reveal">
+      <div>
+        <span class="siren-badge">Siren Trigger Systems</span>
+        <h2 style="color: var(--clean-white); font-size: 32px; margin-bottom: 16px;">Cloud Alerting Engine</h2>
+        <p style="color: rgba(255,255,255,0.8); line-height: 1.7;">
+          Our Cloud Data Platform processes sensor inputs and runs automated threshold comparisons. The moment a sensor registers a breach, SMS alerts, push notifications, and emails are instantly broadcasted to operators.
+        </p>
+      </div>
+      <div>
+        <div class="alert-card" style="margin-bottom: 0; background: var(--clean-white);">
+          <div class="alert-card__icon-wrapper" style="background: #FFF0F0;">
+            <svg class="icon alert-card__icon" viewBox="0 0 24 24">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+              <line x1="12" y1="9" x2="12" y2="13" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+          </div>
+          <div class="alert-card__details">
+            <span class="alert-card__label" style="color: var(--warning-red);">LIVE ALERT</span>
+            <span class="alert-card__value" style="color: var(--primary-navy);">River Basin Sector 4: Alert Level 3</span>
+            <span class="alert-card__subvalue" style="color: var(--text-secondary);">Water Level: +4.82m (Threshold: 4.5m) • 12 sec ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subpage Contact section specifically for flood queries -->
+  <section class="email-box-section" style="padding: 100px 0; background: var(--soft-blue);">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <h2 class="section-header__title">Discuss Your Hydromet Project</h2>
+      <p class="section-header__sub" style="margin-bottom: 34px;">
+        AUREX helps cities, utilities, and mines plan and deploy robust early warning networks. Speak to our Singapore engineering team for specialized consultations.
+      </p>
+      <a href="./contact.html?sector=hydromet" class="btn btn--primary btn--large">Get System Architecture Proposal</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="./assets/logo.png" alt="AUREX Logo" class="footer__logo-img">
+        <p class="footer__text">
+          Singapore-based weather technology company delivering environmental monitoring systems and meteorological intelligence across Asia.
+        </p>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__col-title">Solutions</h3>
+        <ul class="footer__links">
+          <li><a href="./solutions.html#weather-stations" class="footer__link">Weather Stations</a></li>
+          <li><a href="./solutions.html#hydromet-systems" class="footer__link">Hydromet Systems</a></li>
+          <li><a href="./solutions.html#lightning-detection" class="footer__link">Lightning Detection</a></li>
+          <li><a href="./solutions.html#aviation-weather" class="footer__link">Aviation Weather</a></li>
+          <li><a href="./solutions.html#renewable-energy" class="footer__link">Renewable Energy</a></li>
+          <li><a href="./solutions.html#data-platforms" class="footer__link">Data Platforms</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__col-title">Company</h3>
+        <ul class="footer__links">
+          <li><a href="./about.html" class="footer__link">About Us</a></li>
+          <li><a href="./projects.html" class="footer__link">Projects</a></li>
+          <li><a href="./insights.html" class="footer__link">Insights</a></li>
+          <li><a href="./contact.html" class="footer__link">Careers</a></li>
+          <li><a href="./contact.html" class="footer__link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__col-title">Contact</h3>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <svg class="icon footer__contact-icon" viewBox="0 0 24 24">
+              <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>Singapore</span>
+          </li>
+          <li class="footer__contact-item">
+            <svg class="icon footer__contact-icon" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+65 6900 3948</span>
+          </li>
+          <li class="footer__contact-item">
+            <svg class="icon footer__contact-icon" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <a href="mailto:enquiry@aurex.sg" class="footer__link">enquiry@aurex.sg</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span class="footer__copyright">© 2025 AUREX Pte. Ltd. All rights reserved.</span>
+      <div class="footer__bottom-links">
+        <a href="./about.html" class="footer__bottom-link">Privacy Policy</a>
+        <a href="./about.html" class="footer__bottom-link">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
