@@ -1,6 +1,6 @@
 import   { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaArrowRight } from "react-icons/fa6";
+import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
 import './Navbar.css';
 
@@ -37,7 +37,7 @@ export default function NavBar() {
               </li>
             </ul>
             <button className="get-in-touch-btn">
-              Get In Touch <FaArrowRight />
+              Get In Touch <IoIosArrowRoundForward />
             </button>
           </div>
         </div>

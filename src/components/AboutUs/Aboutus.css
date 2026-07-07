@@ -111,9 +111,13 @@ border-radius: 0rem 0rem 7rem 0rem;
     display: flex;
     align-items: center;
     color: #453303;
-    background-color: #fccb4d;
+    background-color: #fbbf24;
+    border: none;
+    font-weight: 500;
 }
-   
+.about-right button svg{
+  font-size: 2rem;
+}
   /* Media queries for different screen sizes */
   @media (min-width: 576px) {
     .custom-container {

@@ -14,7 +14,7 @@
   .navbar-logo img{
     width:25% ;
     object-fit: cover;
-
+    padding: 5px;
   }
 
   .navbar-element{
@@ -34,6 +34,8 @@
         align-items: center;
         width: 40%;
         font-family: 'Commissioner' , sans-serif !important;
+        padding: 0;
+        margin: 0;
   }
   .navbar-menu{
     display: none;
@@ -53,30 +55,43 @@
     background: #ffff;
     box-shadow: #ffffff 1px 2px 3px 3px;
     position: absolute;
-    transform: translateY(88%);
+    transform: translateY(79%);
     left: 1%;
     row-gap: 1rem;
     z-index: 4;
     align-items: flex-start;
- 
+    margin-left: 0.4rem;
   }
   
 
   .navbar-element ul li{
     font-size: 20px;
     font-weight: 400;
+    border: none;
+    outline: none;
+  }
+  .navbar-element ul {
+    border: none;
+    outline: none;
   }
   .get-in-touch-btn{
      
     font-size: 18px;
     border-radius: 2rem;
-    padding: 0.5rem;
-    
+    padding: 0.7rem;
+    background: #fbbf24;
+    color: #453303;
     display: flex
 ;
     justify-content: space-around;
     align-items: center;
+    border:none;
+    font-weight: 500;
+    width: 20%;
 
+  }
+  .get-in-touch-btn svg{
+    font-size: 2rem;
   }
 
   .navbar-section{
@@ -88,7 +103,14 @@
 
   .link-li{
     text-decoration: none;
-    color: black;
+    color: #453303;
+    font-weight: 500;
+    border: none;
+    outline: none;
+  }
+  .link-li:hover{
+    color: #453303;
+    text-decoration: none;
   }
   @media (min-width: 576px) {
     .container {
